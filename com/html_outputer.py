@@ -1,5 +1,6 @@
 # -*- coding:utf-8 -*-
 
+
 class HtmlOutputer(object):
     def __init__(self):
         self.datas = list()
@@ -31,6 +32,7 @@ class HtmlOutputer(object):
         for data in self.datas:
             fout.write("<tr>")
             fout.write("<td>%s</td>" % data['replies'])
+            fout.write("<td>%s</td>" % data['reads'])
             fout.write("<td>%s</td>" % data['title'].encode('utf-8'))
             fout.write("<td>%s</td>" % data['url'])
             fout.write("</tr>")

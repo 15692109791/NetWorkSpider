@@ -1,4 +1,7 @@
 # -*- coding:utf-8 -*-
+import sys
+
+sys.path.append('../')
 import url_manager, html_parser, html_downloader, html_outputer
 from frame.config import ROOT_URL, MAX_COUNT
 
