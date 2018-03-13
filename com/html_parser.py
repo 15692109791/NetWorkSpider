@@ -32,7 +32,7 @@ class HtmlPaser(object):
             res_data = dict()
             try:
                 title = title_node.find('a').get_text()
-                if title.find('原罪学者') > -1:
+                if title.find('料理') > -1:
                     reply = num_node.find('a').get_text()
                     read = num_node.find('em').get_text()
                     new_url = title_node.find('a')['href']
