@@ -34,3 +34,9 @@ print link_node.name, link_node['href'], link_node.get_text()
 print '获取P段落文字'
 p_node = soup.find('p', class_='story')
 print p_node.name, p_node.get_text()
+
+# 打印a标签的数量
+print '打印a标签的数量'
+all_link = soup.find_all('a')
+print len(all_link)
+
